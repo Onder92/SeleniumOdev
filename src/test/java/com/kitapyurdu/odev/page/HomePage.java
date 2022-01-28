@@ -27,6 +27,11 @@ public class HomePage {
         methods.click(By.cssSelector("a[class='common-sprite'] b"));
         methods.waitBySeconds(2);
         methods.click(By.xpath("//a[contains(text(),'Çıkış')]"));
+        methods.waitBySeconds(3);
+        String logOutText=methods.getText(By.cssSelector("div[class='success']"));
+        methods.isElementVisible(By.cssSelector("div[class='success']"));
+        System.out.println("Çıkış: " +logOutText);
+        logger.info("Çıkış: " +logOutText);
     }
 }
 
