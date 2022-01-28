@@ -10,6 +10,7 @@ public class HomePage {
     public HomePage(){
 
         methods=new Methods();
+        Logger logger = LogManager.getLogger(FavoritePage.class);
     }
 
     public void home(){
