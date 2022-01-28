@@ -6,11 +6,11 @@ import org.openqa.selenium.By;
 public class HomePage {
 
     Methods methods;
+    Logger logger = LogManager.getLogger(FavoritePage.class);
 
     public HomePage(){
 
         methods=new Methods();
-        Logger logger = LogManager.getLogger(FavoritePage.class);
     }
 
     public void home(){
